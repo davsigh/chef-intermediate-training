@@ -15,6 +15,9 @@ describe 'apache::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+    it 'install the apache2 package' do
+      expect(chef_run).to install_package('apache2')
+    end
   end
 
   context 'When all attributes are default, on CentOS 8' do

@@ -37,6 +37,12 @@ platforms:
       image: dokken/centos-7
       pid_one_command: /usr/lib/systemd/systemd
       privileged: true
+  - name: ubuntu-20.04
+    driver:
+      image: dokken/ubuntu-20.04
+      pid_one_command: /bin/systemd
+      intermediate_instructions:
+        - RUN /usr/bin/apt-get update
 suites:
   - name: default
     sudo: true
