@@ -16,3 +16,6 @@ end
 describe file('/var/www/html/index.html') do
   it { should exist }  
 end
+describe port('8080') do 
+  it { should_not be_listening }
+end
