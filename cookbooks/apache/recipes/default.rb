@@ -5,13 +5,16 @@
 # Copyright:: 2021, The Authors, All Rights Reserved.
 package node['apache']['package_name']
 file node['apache']['default_index_html'] do
-    content 'Welcome Home'
-    owner 'root'
-    group 'root'
-    mode '0755'
-    action :create
+  content 'Welcome Home'
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end
+apache_vhost 'admins' do
+  site_name 'admins'
+  action :create
 end
 service node['apache']['service_name'] do
-    action [:start, :enable]
+  action [:start, :enable]
 end
-

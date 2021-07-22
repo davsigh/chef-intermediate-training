@@ -7,6 +7,7 @@
 require 'spec_helper'
 
 describe 'apache::default' do
+  step_into :apache_vhost
   context 'When all attributes are default, on Ubuntu 20.04' do
     # for a complete list of available platforms and versions see:
     # https://github.com/chefspec/fauxhai/blob/master/PLATFORMS.md

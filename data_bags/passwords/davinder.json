@@ -1,0 +1,10 @@
+{
+  "id": "davinder",
+  "password": {
+    "encrypted_data": "8xb1fEhMDvxACt/XAFNRVe463IHZ4gK2xiCqCUUdFcGO13+0b03CJEpNRCCR\n5pOwXs2DKbI=\n",
+    "iv": "2I4QIMKsKVu1/qE2\n",
+    "auth_tag": "NIwBOxHWrtjbA/xmYGRPHA==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  }
+}
